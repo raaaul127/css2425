@@ -1,0 +1,9 @@
+div > p{
+    color: red;
+}
+section > p{
+    color: aqua;
+}
+div>h1, p {
+    color: blue;
+}

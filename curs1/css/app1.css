@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+}
+
+div {
+    border: 5px solid red;
+    text-align: center;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+}
+div p{
+    font-size: 20px;
+}
+div > div {
+    color: red;
+    background-color: blue;
+
+}
+div > div > div {
+    color: green;
+    background-color: yellow;
+}

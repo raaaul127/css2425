@@ -1,0 +1,9 @@
+#titlu{
+    width: 600px;
+    margin: auto;
+    border-bottom: 2px red solid;
+}
+.text{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
