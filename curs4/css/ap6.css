@@ -1,0 +1,87 @@
+:root{
+    --primary-color: blue;
+    --secondary-color:rgb(75, 75, 229);
+    --font-color: rgb(7, 7, 32);
+    --bg-color: #fff;
+    --heading-color: rgb(19, 19, 33);
+}
+[data-theme="dark"] {
+    --primary-color: rgb(96, 120, 227);
+    --secondary-color:rgb(77, 77, 99);
+    --font-color: rgb(146, 146, 164);
+    --bg-color: #252121;
+    --heading-color: rgb(116, 116, 153);
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: calc(0.8rem + 0.25vh);
+}
+h1{
+    color: var(--heading-color);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+/* slider switch css */
+.theme-switch-wrapper{
+    display: flex;
+    align-items: center;
+}
+.theme-switch-wrapper em{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+.theme-switch{
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+.theme-switch input{
+    display: none;
+}
+.slider{
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+.slider:before{
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+input:checked + .slider{
+    background-color: rgb(25, 168, 77);
+}
+input:checked + .slider::before{
+    transform: translate(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round::before{
+    border-radius: 50%;
+}

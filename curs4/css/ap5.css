@@ -1,0 +1,12 @@
+:root{
+    --myColor: rgb(43, 255, 0);
+}
+body{
+    --myColor: blue;
+}
+.block{
+    --myColor: red;
+}
+p{
+    color:var(--myColor);
+}
