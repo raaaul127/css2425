@@ -360,6 +360,7 @@ nav{
   top: 0;
   transition: 0.4s;
 }
+
 .slider:before{
   background-color: #fff;
   bottom: 4px;
@@ -562,6 +563,9 @@ input:checked + .slider::before{
   }
 }
 @media (max-width: 768px) {
+  #header h1.logo {
+    display: none;
+  } 
   #hero {
     height: 100vh;
   }
